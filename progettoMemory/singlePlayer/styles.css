@@ -1,0 +1,99 @@
+/* 
+  STILI UNIVERSALI PER TUTTI I FORMATI 
+*/
+
+body{
+  background-color: #afeeee;
+}
+
+
+body.flashErrore {
+    animation: flashErrore 0.5s infinite alternate;
+}
+
+body.flashCorretto {
+    animation: flashCorretto 0.5s infinite alternate;
+}
+
+@keyframes flashErrore {
+    0% {
+        background-color: #afeeee; /* colore di sfondo predefinito */
+    }
+    100% {
+        background-color: red; /* colore di sfondo rosso */
+    }
+}
+
+@keyframes flashCorretto {
+    0% {
+        background-color:#afeeee; /* colore di sfondo predefinito */
+    }
+    100% {
+        background-color: green; /* colore di sfondo verde */
+    }
+}
+
+
+
+
+
+/* 
+  STILI DIVISI PER FORMATO
+*/
+
+
+
+@media screen and (max-width: 1920px){  /* CSS PER RISOLUZIONI 1920x */
+
+  body{
+    zoom: 60%;
+  }
+
+  p{
+    font-size: 25;
+    font-weight: bold;
+  }
+
+
+  h1{
+    font-style: italic;
+  }
+
+  td{
+    text-align: center;
+    vertical-align: top;
+    width: 275px;
+    height: 400px;
+    overflow: auto; 
+  }
+
+
+
+}
+
+@media screen and (min-width: 1440px){  /* CSS PER RISOLUZIONI 1440x */
+  
+  body{
+    zoom: 50%;
+  }
+
+  p{
+    font-size: 25;
+    font-weight: bold;
+  }
+
+
+  h1{
+    font-style: italic;
+  }
+
+  td{
+    text-align: center;
+    vertical-align: top;
+    width: 275px;
+    height: 400px;
+    overflow: auto; 
+  }
+
+
+}
